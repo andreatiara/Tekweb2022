@@ -1,0 +1,26 @@
+[
+    {
+        "ID" : "1",
+        "Title" : "Mental Health",
+        "Author" : "Adam Felman",
+        "Thumbnail" : "https://raw.githubusercontent.com/andreatiara/tekwebb2022/main/images/img-1.jpg",
+        "Content" : "",
+        "markdown": "ar1.md"
+    },
+    {
+        "ID" : "2",
+        "Title" : "Nonsuicidal Self-Injury: What We Know, and What We Need to Know",
+        "Author" : "Can J Psychiatry",
+        "Thumbnail" : "https://raw.githubusercontent.com/andreatiara/tekwebb2022/main/images/img-2.jpg",
+        "Content" : "",
+        "markdown": "ar2.md"
+    },
+    {
+        "ID" : "3",
+        "Title" : "Stress in the City",
+        "Author" : "Zern Liew",
+        "Thumbnail" : "https://raw.githubusercontent.com/andreatiara/tekwebb2022/main/images/img-3.jpg",
+        "Content" : "",
+        "markdown": "ar3.md"
+    }
+]

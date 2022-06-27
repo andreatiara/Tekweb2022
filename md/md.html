@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <link rel="stylesheet" href="md.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body id="app">
+        
+    <!-- custom cursors  -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+
+
+    <div id="menu-bars" class="fas fa-bars"></div>
+        
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"> <span>ANDREA</span> TIARA</a>
+
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Articles</a>
+            <!-- <a href="#experience">experience</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#contact">contact</a> -->
+        </nav>
+
+        <div class="follow">
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-github"></a>
+        </div>
+
+    </header>
+    <div class="md">
+        <div v-html="markdown"></div>    
+    </div>
+
+<script src="md.js"></script>
+</body>
+</html>
