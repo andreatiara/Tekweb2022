@@ -43,7 +43,7 @@ response:
     "photo"     : ""
 }
 ```
-### Menambahkan biodata user
+### Menambahkan about user
 ```
 POST: /about
 
