@@ -2,297 +2,166 @@
 
 
 
-## BIODATA
+## ABOUT
 
-### Menampilkan biodata user
+### Menampilkan about user
 ```
-GET: /biodata
-
-response:
-[
-  {
-    "id"              : "",
-    "nama_lengkap"    : "",
-    "nama_panggilan"  : "",
-    "tgl_lahir"       : "",
-    "deskripsi"       : "",
-    "avatar"          : ""
-  },
-  {
-    ...
-  }
-]
-```
-### Menampilkan biodata user berdasarkan ```id```
-```
-GET: /biodata/[id]
-
-response:
-{
-  "id"              : "",
-  "nama_lengkap"    : "",
-  "nama_panggilan"  : "",
-  "tgl_lahir"       : "",
-  "deskripsi"       : "",
-  "avatar"          : ""
-}
-```
-### Menambahkan biodata user
-```
-POST: /biodata
-
-data:
-{
-  "nama_lengkap"    : "",
-  "nama_panggilan"  : "",
-  "tgl_lahir"       : "",
-  "deskripsi"       : "",
-  "avatar"          : ""
-}
-
-response:
-true    //if true
-false   //if false
-```
-### Mengubah biodata user
-```
-PUT: /biodata
-
-data:
-{
-  "nama_lengkap"    : "",
-  "nama_panggilan"  : "",
-  "tgl_lahir"       : "",
-  "deskripsi"       : "",
-  "avatar"          : ""
-}
-
-response:
-true    //if true
-false   //if false
-```
-### Menghapus biodata user
-```
-DELETE: /biodata/[id]
-
-response:
-true    //if true
-false   //if false
-```
-## ARTICLE
-### Menampilkan seluruh article
-```
-GET: /article
+GET: /about
 
 response:
 [
   {
     "id"        : "",
-    "title"     : "",
-    "author"    : "",
-    "markdown"  : "",
-    "thumbnail" : "",
-    "content"   : ""
+    "gender"    : "",
+    "age"       : "",
+    "city"      : "",
+    "religion"  : "",
+    "email"     : "",
+    "status"    : "",
+    "country"   : "",
+    "photo"     : ""
   },
   {
     ...
   }
 ]
 ```
-### Menampilkan article berdasarkan ```id```
+### Menampilkan about user berdasarkan ```id```
 ```
-GET: /article/[id]
+GET: /about/[id]
 
 response:
 {
-  "id"        : "",
-  "title"     : "",
-  "author"    : "",
-  "markdown"  : "",
-  "thumbnail" : "",
-  "content"   : ""
+    "id"        : "",
+    "gender"    : "",
+    "age"       : "",
+    "city"      : "",
+    "religion"  : "",
+    "email"     : "",
+    "status"    : "",
+    "country"   : "",
+    "photo"     : ""
 }
 ```
-### Menambahkan article
+### Menambahkan biodata user
 ```
-POST: /article
+POST: /about
 
 data:
 {
-  "title"     : "",
-  "author"    : "",
-  "markdown"  : "",
-  "thumbnail" : "",
-  "content"   : ""
+    "gender"    : "",
+    "age"       : "",
+    "city"      : "",
+    "religion"  : "",
+    "email"     : "",
+    "status"    : "",
+    "country"   : "",
+    "photo"     : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-### Mengubah article
+### Mengubah about user
 ```
-PUT: /article
+PUT: /about
 
 data:
 {
-  "title"     : "",
-  "author"    : "",
-  "markdown"  : "",
-  "thumbnail" : "",
-  "content"   : ""
+    "gender"    : "",
+    "age"       : "",
+    "city"      : "",
+    "religion"  : "",
+    "email"     : "",
+    "status"    : "",
+    "country"   : "",
+    "photo"     : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-### Menghapus article
+### Menghapus about user
 ```
-DELETE: /article
+DELETE: /about/[id]
 
 response:
 true    //if true
 false   //if false
 ```
-
-## PORTFOLIO
-### Menampilkan seluruh data portfolio
+## ARTIKEL
+### Menampilkan seluruh artikel
 ```
-GET: /portfolio
+GET: /artikel
 
 response:
 [
   {
     "id"          : "",
     "title"       : "",
-    "deskripsi"   : "",
-    "url"         : "",
-    "thumbnail"   : ""
+    "author"      : "",
+    "thumbnail"   : "",
+    "content"     : "",
+    "markdown"    : ""
   },
   {
     ...
   }
 ]
 ```
-### Menampilkan data portfolio berdasarkan ```id```
+### Menampilkan artikel berdasarkan ```id```
 ```
-GET: /portfolio/[id]
+GET: /artikel/[id]
 
 response:
 {
-  "id"          : "",
-  "title"       : "",
-  "deskripsi"   : "",
-  "url"         : "",
-  "thumbnail"   : ""
-}
-```
-### Menambahkan data porfolio
-```
-POST: /portfolio
-
-data:
-{
-  "title"       : "",
-  "deskripsi"   : "",
-  "url"         : "",
-  "thumbnail"   : "" 
-}
-
-response:
-true    //if true
-false   //if false
-```
-
-### Mengubah data porfolio
-```
-PUT: /portfolio
-
-data:
-{
-  "title"       : "",
-  "deskripsi"   : "",
-  "url"         : "",
-  "thumbnail"   : "" 
-}
-
-response:
-true    //if true
-false   //if false
-```
-### Menghapus data portfolio
-```
-DELETE: /portfolio/[id]
-
-response:
-true    //if true
-false   //if false
-```
-## SOCIAL
-### Menampilkan seluruh data social media
-```
-GET: /social
-
-response:
-[
-  {
     "id"          : "",
-    "instagram"   : "",
-    "github"      : "",
-    "email"       : ""
-  },
-  {
-    ...
-  }
-]
-```
-### Menampilkan data social media berdasarkan ```id```
-```
-GET: /social/[id]
-
-response:
-{
-  "id"          : "",
-  "instagram"   : "",
-  "github"      : "",
-  "email"       : ""
+    "title"       : "",
+    "author"      : "",
+    "thumbnail"   : "",
+    "content"     : "",
+    "markdown"    : ""
 }
 ```
-### Menambahkan data social media
+### Menambahkan artikel
 ```
-POST: /social
+POST: /artikel
 
 data:
 {
-  "instagram"   : "",
-  "github"      : "",
-  "email"       : "" 
+    "title"       : "",
+    "author"      : "",
+    "thumbnail"   : "",
+    "content"     : "",
+    "markdown"    : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-
-### Mengubah data social media
+### Mengubah artikel
 ```
-PUT: /social
+PUT: /artikel
 
 data:
 {
-  "instagram"   : "",
-  "github"      : "",
-  "email"       : "" 
+    "title"       : "",
+    "author"      : "",
+    "thumbnail"   : "",
+    "content"     : "",
+    "markdown"    : ""
 }
 
 response:
 true    //if true
 false   //if false
 ```
-### Menghapus data social media
+### Menghapus artikel
 ```
-DELETE: /social/[id]
+DELETE: /artikel
 
 response:
 true    //if true
